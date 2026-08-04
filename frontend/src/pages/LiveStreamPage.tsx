@@ -82,7 +82,7 @@ export default function LiveStreamPage() {
   const [webcamRes, setWebcamRes] = useState<{ w: number; h: number } | null>(null);
   const [recording, setRecording] = useState(false);
   const wsRef = useRef<WebSocket | null>(null);
-  const alertTimerRef = useRef<ReturnType<typeof setTimeout>>();
+  const alertTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   // Browser-side pose → backend BiLSTM: sliding-window buffer + alert cooldown
   const landmarkBufferRef = useRef<number[][]>([]);
