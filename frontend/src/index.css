@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "video.js/dist/video-js.css";
+
+@theme {
+  --color-panel: #111110;
+  --color-surface: #0a0a0a;
+  --color-accent: #378ADD;
+  --color-success: #5DCAA5;
+  --color-danger: #E24B4A;
+  --color-warning: #EF9F27;
+  --color-muted: #6b7280;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-surface text-gray-100 font-sans antialiased;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video.js dark theme overrides */
+.video-js {
+  @apply rounded-lg overflow-hidden;
+}
+
+.video-js .vjs-control-bar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.video-js .vjs-play-progress,
+.video-js .vjs-volume-level {
+  background-color: var(--color-accent);
+}
+
+.video-js .vjs-big-play-button {
+  @apply border-none rounded-full;
+  background-color: rgba(55, 138, 221, 0.8);
+  font-size: 3em;
+  line-height: 1.7em;
+  height: 1.7em;
+  width: 1.7em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# User data (runtime; bind-mounted at runtime)
+storage/
+
+# ML training artifacts (not needed at inference time)
+ml/training/
+ml/sample_videos/
+ml/*.log
+ml/notebooks/
+ml/*.ipynb
+
+# Git / editor / OS
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Docs / misc
+*.md

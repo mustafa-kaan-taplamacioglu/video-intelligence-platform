@@ -1,0 +1,28 @@
+{
+  "window_size": 20,
+  "stride": 10,
+  "num_classes": 2,
+  "labels": [
+    "Normal",
+    "Suspicious"
+  ],
+  "confidence_threshold": 0.5,
+  "features_per_frame": 231,
+  "target_fps": 8,
+  "mobilenet_img_size": 128,
+  "mobilenet_target_fps": 2,
+  "mobilenet_threshold": 0.5,
+  "best_architecture": "bilstm",
+  "best_params": {
+    "u1": 32,
+    "u2": 16,
+    "dr": 0.30000000000000004,
+    "lr": 0.0005844510300673959,
+    "bs": 32
+  },
+  "cv_macro_f1": "0.6834 \u00b1 0.0080",
+  "test_accuracy": 0.6763948497854078,
+  "test_macro_f1": 0.6288416814835347,
+  "test_roc_auc": 0.5949994619455884,
+  "test_pr_auc": 0.4454305456212322
+}

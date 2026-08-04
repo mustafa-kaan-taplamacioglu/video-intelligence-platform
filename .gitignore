@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+
+# Storage (runtime generated)
+backend/storage/
+
+# ML sample videos (large, not needed for deployment)
+backend/ml/sample_videos/
+
+# Test / scratch video files in project root (not part of the app)
+/*.mp4
+/*.mov
+/*.mkv
+
+# Claude Code local plan files (personal, not project)
+claude-code-skills-guide.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+
+# Claude Code local workflow (entire directory — settings, skills, history)
+.claude/
+
+# Internal design notes — replaced by ARCHITECTURE.md for public consumption
+CLAUDE.md
+
+# Backup files (e.g., favicon.svg.original-backup) — local-only references
+*.original-backup
+*.bak
+
+# Report artifacts — generated locally, not part of the runnable project
+ProjectReport.pdf
+screenshots_for_report/
